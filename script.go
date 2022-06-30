@@ -34,14 +34,14 @@ func main() {
 		//写入文件时，使用带缓存的 *Writer
 		write := bufio.NewWriter(file)
 		write.WriteString("+ [author](https://github.com/3293172751)\n")
-		write.WriteString("# 编译原理\n")
+		write.WriteString("# 第"+a1+"节\n")
 
 		//批量加入文件，
 
 		write.WriteString("+ [回到目录](../README.md)\n")
 		write.WriteString("+ [上一节](" + a3 + ".md)\n")
-		write.WriteString("> ❤️💕💕我喜欢区块链,如果你也喜欢区块链,请关注博客[http://nsddd.top](http://nsddd.top/)\n")
-		write.WriteString("--------------------------------\n")
+		write.WriteString("> ❤️💕💕这是一本难得的可以当作计算机专业权威入门指南的书籍,或者说其中的内容可能会伴随你的整个程序员职业生涯。Myblog:[http://nsddd.top](http://nsddd.top/)\n")
+		write.WriteString("---\n")
 		write.WriteString("[TOC]\n")
 		for i := 0; i < 5; i++ {
 			write.WriteString("\n")
